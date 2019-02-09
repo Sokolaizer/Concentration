@@ -19,7 +19,6 @@ class ConcentrationViewController: UIViewController {
     
     @IBAction func newGame(_ sender: UIButton) {
         game.resetGame()
-        emojiChoices = emojiTheme.randomElement()!.value
         updateViewFromModel()
     }
     

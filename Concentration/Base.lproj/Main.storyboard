@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.30.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ucV-kd-TNM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ucV-kd-TNM">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.19.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k1a-BG-2gL">
-                                <rect key="frame" x="16" y="64" width="288" height="232"/>
+                                <rect key="frame" x="16" y="80" width="288" height="232"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Mg9-wx-VyG">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="72"/>
@@ -168,12 +168,12 @@
                         <color key="backgroundColor" red="0.10325074940237534" green="0.10475086934779979" blue="0.18791154922599007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Pg8-Qg-ug6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IRb-mo-Bn7"/>
-                            <constraint firstItem="k1a-BG-2gL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LY5-v6-X4S"/>
+                            <constraint firstItem="k1a-BG-2gL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="LY5-v6-X4S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pg8-Qg-ug6" secondAttribute="trailing" constant="16" id="RFY-JL-aa4"/>
                             <constraint firstItem="Pg8-Qg-ug6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sr2-pp-QTn"/>
                             <constraint firstItem="k1a-BG-2gL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZIx-ar-BUV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pg8-Qg-ug6" secondAttribute="bottom" constant="12" id="eaf-MY-q0r"/>
-                            <constraint firstItem="Pg8-Qg-ug6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k1a-BG-2gL" secondAttribute="bottom" constant="16" id="hoF-Um-YVq"/>
+                            <constraint firstItem="Pg8-Qg-ug6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="k1a-BG-2gL" secondAttribute="bottom" priority="750" constant="16" id="hoF-Um-YVq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k1a-BG-2gL" secondAttribute="trailing" constant="16" id="mKx-Vx-gs2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -215,7 +215,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Sports"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choode Theme" id="r5v-uy-pyq"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="r5v-uy-pyq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63P-4l-Cg5">
@@ -223,7 +223,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Faces"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choode Theme" id="RTz-KN-ZJF"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="RTz-KN-ZJF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rs-qk-dO6">
@@ -231,7 +231,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <state key="normal" title="Animals"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choode Theme" id="5w3-2z-aRe"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="Choose Theme" id="5w3-2z-aRe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -270,6 +270,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RTz-KN-ZJF"/>
+        <segue reference="r5v-uy-pyq"/>
     </inferredMetricsTieBreakers>
 </document>
